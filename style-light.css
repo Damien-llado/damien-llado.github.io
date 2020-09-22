@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+body 
+{   
+    font-family: 'Montserrat', sans-serif;
+    color : #34BAF0;
+    background-color: #F5F5F5;
+}
+ 
+.remonte
+{
+    display: none;
+}
+
+.langues p 
+{
+    display: none;
+}
+
+/* Configuration des sections */
+
+section
+{
+   background-color: white;
+   width: 45%;
+   border-radius: 43px;
+   margin: 60 auto;
+   box-shadow: 6px 6px 10px #B9B9B9;
+   display: flex;
+   flex-direction: column;
+}
+
+.titre
+{
+    display: flex;
+    padding-left: 60px;
+    padding-top: 35px;
+}
+
+.devise 
+{
+    width: fit-content;
+}
+
+.devise hr
+{
+    margin-top: -25px;
+}
+
+.titre hr
+{
+    margin-top : -25px ;
+}
+
+.titre div
+{
+    padding-left: 20px ;
+}
+
+h2
+{
+    margin-top : 0;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.fas
+{
+    font-size: 45px;
+}
+
+.texte
+{
+    margin-bottom: 30px;
+}
+
+p
+{
+    font-size: 25px;
+    font-weight: 450;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+
+/* Mise en forme de la barre de soulignement */
+
+hr
+{
+    background-color: #34BAF0;
+    padding-top: 3px;
+    border : none ;
+    margin-top: -20px;
+}
+
+
+/* Mise en forme du menu à ancres */
+
+.ancre 
+{
+    background-color: #34BAF0 ;
+    border-radius: 43px;
+    width: 178px;
+    box-shadow: 6px 6px 10px #B9B9B9;
+    position: fixed;
+    top: 77px;
+    left: 5%;
+}
+
+.ancre a
+{
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: 650;
+}
+
+.ancre a:hover
+{
+    color: #3586e2;
+}
+
+.ancre a:active
+{
+    color: #0e61c0;
+}
+
+li
+{
+    list-style: none;
+    margin : 10px 15px 0px -15px ;
+}
+
+/* Mise en place de la section présentation */
+
+#presentation
+{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.img
+{
+    background-image: url(photo.png);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 350px;
+    height: 400px;
+    border-radius: 43px;
+    margin: 20px;
+    box-shadow: 3px 3px 6px #ECECEC;
+}
+
+#presentation .nom
+{
+    margin: auto;
+}
+
+h1
+{
+    font-weight: 700;
+    font-size: 45px;
+    padding-bottom: 20px;
+    margin-top : -30px ;
+    text-align: center;
+}
+
+#presentation h2
+{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+#presentation p
+{
+    font-size: 25px;
+    font-weight: 450;
+    padding: 0px;
+    text-align: center;
+}
+
+/* Mise en forme de la section Projet */
+
+#projet p
+{
+    font-weight: 600;
+}
+
+/* Mise en forme de la section contact et du formulaire */
+
+form
+{
+    margin: 50px auto 30px auto;   
+}
+
+input, textarea
+{
+    background-color: #F5F5F5 ;
+    border: none;
+    box-shadow: 6px 6px 10px #B9B9B9;
+    margin-bottom: 20px;
+    width: 37vw;
+    max-width : 550px;
+    font-size: 23px;
+    color: #34BAF0
+}
+
+textarea
+{
+    border-radius: 20px;
+}
+
+input
+{
+    border-radius: 20px;
+    height: 45px;
+}
+
+input::placeholder
+{
+    color: #34BAF0;
+    font-size: 23px;
+    font-weight: bold;
+    padding-left: 5px;
+    margin: auto 0;
+}
+
+textarea::placeholder
+{
+    padding-left: 5px;
+}
+
+.bouton_envoyer
+{
+    background-color: #34BAF0 ;
+    width: 150px;
+    color: white;
+    font-weight: bolder;
+    float: right;
+}
+
+.bouton_envoyer:hover
+{
+    background-color: #3586e2;;
+}
+
+.bouton_envoyer:active
+{
+    background-color: #0e61c0;;
+}
+
+/* Paramètrage des boutons de changement de thèmes */
+
+.parametres
+{
+    width: 177px;
+    position: fixed;
+    top: 335px;
+    left: 5%;
+    background-color: #34BAF0 ;
+    border-radius: 43px;
+    height: 140px;
+    box-shadow: 6px 6px 10px #B9B9B9;
+}
+
+.langues , .themes
+{
+    margin-left: 10px;
+}
+
+.themes div
+{
+    height: 50px;
+    margin-bottom: 5px;
+    width: 100px;
+    border-radius: 43px;
+}
+
+.themes .fas, .themes .far
+{
+    font-size : 35px;
+}
+
+.themes
+{
+    display: flex;
+    width: 147px;
+    margin : 10px auto 0 10px;
+}
+
+.sun
+{
+    background-color: white;
+    position: absolute;
+    box-shadow: 6px 0px 20px -4px rgba(0, 0, 0, 0.562);
+}
+
+.moon
+{
+    background-color: #144659;
+    margin-left: 55px;
+}
+
+.sun i
+{
+    margin-left : 30px;
+    margin-top: 6px;
+}
+
+.moon i
+{
+    margin-left : 35px;
+    margin-top: 6px;
+}
+
+/* Paramétrages de boutons de changement de langues */
+
+.fr
+{
+    background-image: url(drapeau-fr.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position : absolute ;
+}
+
+.en 
+{
+    background-image: url(drapeau-en.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    margin-left: 55px;
+    box-shadow: -6px 0px 20px -4px rgba(0, 0, 0, 0.562);
+    position : absolute ;
+}
+
+.langues
+{
+    display: flex;
+    width: 147px;
+    margin : 10px auto 0 10px;
+}
+
+.langues div
+{
+    height: 50px;
+    margin-bottom: 5px;
+    width: 100px;
+    border-radius: 43px;
+}
+
+/* Mise en place du responsive mobile */
+
+@media(max-width: 1024px) 
+{
+    /* Mise en place des boutons paramètres */
+    .ancre
+    {
+        display: none;
+    }
+
+    .parametres
+    {
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: none;
+        position: absolute;
+        top: 13px;
+        left: 7vw;
+        width: fit-content;
+    }
+
+    .parametres div
+    {
+        height: 50px;
+        width: 50px;
+        border-radius: 43px;
+    }  
+     
+    .moon , .en
+    {
+        margin-left: 34px;
+    }
+
+    .themes i 
+    {
+        margin-left: 8px;
+    }
+
+    .fr , .en 
+    {
+        background-color: #34BAF0 ;
+        background-image: none;
+    }
+
+    .langues p 
+    {
+        display: block;
+        color: white;
+        font-size: 27px;
+        font-weight: 700;
+        margin-top: 8;
+    }
+
+ /* ------------------------*/
+ 
+    body
+    {
+        background-color: white;
+    }
+
+    section
+    {
+        background-color: none;
+        box-shadow: none;
+        width: 70%;
+        margin: auto;
+    }
+
+    .img
+    {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        margin: 0 auto 60 auto;
+    }
+
+    p
+    {
+        text-align: center;
+        font-size: 20px;
+        padding: 0;
+    }
+
+    h1 
+    {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    h2 
+    {
+        font-size: 25px;
+    }
+
+    .titre
+    {
+        margin : auto ; 
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titre div 
+    {
+        padding: 0;
+    }
+
+    .titre i 
+    {
+        margin: 10px auto 20px auto;
+        font-size: 70;
+    }
+
+    .titre hr
+    {
+        margin-top: -18px ;
+    }
+    /* Mise en place de l'en-tête */
+
+    #presentation
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #presentation p 
+    {
+        text-decoration: underline;
+        font-size: 30px;
+    }
+
+    .nom hr 
+    {
+        display: none;
+    }
+
+    /* Mise en place de la section projet */
+    
+    #projet .titre
+    {
+        padding-top: 30px;
+    }
+
+    /* Mise en place du formulaire */
+    input, textarea
+    {
+        width : 100% ;
+    }
+
+    .bouton_envoyer
+    {
+        width: 100%;
+        float: none;
+    }
+
+    .remonte
+    {
+        display: block;
+        position: fixed;
+        right : 13px ;
+        bottom: 20px ;
+    }
+
+    .remonte i
+    {
+        font-size: 60;
+        opacity: 50%;
+        color : #34BAF0;
+    }
+}
+
+@media (max-width: 1445px) 
+{
+    h1 
+    {
+        font-size: 40px ;
+    }  
+
+    #presentation h2 
+    {
+        font-size: 30px ;
+    }
+    #presentation p 
+    {
+        font-size: 20px ;
+    }
+}
+
+@media (max-width : 426px)
+{
+    .parametres
+    {
+        top : 7px;
+        left : 0vw;
+    }
+}
